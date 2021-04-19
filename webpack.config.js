@@ -1,19 +1,21 @@
 module.exports = {
     entry: "./assets/js/app.js",
     output: {
-        filename: "main.js"
+        filename: "main.js",
     },
     module: {
         rules: [{
-            test: /\.js$/,
-            use: [
+            test: /\.m?js$/,
+            exclude: /node_modules/,
+            use:
                 {
                     loader: "babel-loader",
                     options: {
-                        presets: ['env']
+                        presets: [
+                            ['@babel/preset-env', { targets: "defaults" }]
+                        ]
                     }
                 }
-            ]
         }]
     }
 }
