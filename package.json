@@ -1,0 +1,29 @@
+{
+  "name": "D_WEBPACK",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webdev": "webpack --config webpack.config.js --mode=development --watch",
+    "webprod": "webpack --config webpack.config.js --mode=production --optimization-minimize"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JJeanniard/D_WEBPACK.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JJeanniard/D_WEBPACK/issues"
+  },
+  "homepage": "https://github.com/JJeanniard/D_WEBPACK#readme",
+  "devDependencies": {
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
